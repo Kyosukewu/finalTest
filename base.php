@@ -9,7 +9,7 @@ class DB
     function __construct($table)
     {
         $this->table = $table;
-        $this->pdo = new PDO('mysql:host=localhost;charset=utf8;dbname=dbt21;', 'root', '');
+        $this->pdo = new PDO('mysql:host=localhost;charset=utf8;dbname=dbt2;', 'root', '');
     }
     function all(...$arg)
     {

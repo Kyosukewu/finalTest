@@ -17,10 +17,10 @@
         foreach ($news as $v) {
         ?>
             <tr>
-                <td class="hd"><?= $v['tit']; ?></td>
+                <td class="hd"><?= $v['title']; ?></td>
                 <td>
-                    <span class="tit"><?= mb_substr($v['txt'], 0, 20); ?>...</span>
-                    <span class="txt" style="display:none;"><?= $v['txt']; ?></span>
+                    <span class="tit"><?= mb_substr($v['text'], 0, 20); ?>...</span>
+                    <span class="txt" style="display:none;"><?= $v['text']; ?></span>
                 </td>
                 <td>
                     <?php
@@ -28,7 +28,7 @@
                         $chk = $Good->count(['acc' => $_SESSION['login'], 'news' => $v['id']]);
                         if ($chk) {
                     ?>
-                    <a id="good<?=$v['id'];?>" href="#" onclick="good('<?=$v['id'];?>','2','<?=$_SESSION['login'];?>')">回收讚</a>
+                    <a id="good<?=$v['id'];?>" href="#" onclick="good('<?=$v['id'];?>','2','<?=$_SESSION['login'];?>')">收回讚</a>
                     <?php
                         }else{
                     ?>

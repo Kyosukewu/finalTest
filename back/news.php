@@ -23,7 +23,7 @@
         ?>
             <tr>
                 <td class="hd"><?= ($st+1+$k); ?>.</td>
-                <td class="hd"><?= $v['tit']; ?></td>
+                <td class="hd"><?= $v['title']; ?></td>
                 <td>
                     <input type="checkbox" name="sh[]" value="<?= $v['id']; ?>" <?=($v['sh']==1)?"checked":"";?>>
                 </td>
